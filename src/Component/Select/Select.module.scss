@@ -1,0 +1,42 @@
+.componentWrapper {
+  position: relative;
+}
+
+.selectWrapper {
+  border: 1px solid #eee;
+  border-radius: 5px;
+  font-size: 1em;
+  padding: 1em;
+  color: #777;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  > span {
+    color: #333;
+  }
+}
+
+.optionsWrapper {
+  display: none;
+  position: absolute;
+  list-style: none;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  flex-direction: column;
+  padding: 0;
+  width: 100%;
+  .option {
+    font-size: 1.15em;
+    padding: 1em;
+    cursor: pointer;
+    transition: all 0.35s;
+    border-bottom: 1px solid #eee;
+    background-color: #f1f2f6;
+    &:hover {
+      background-color: #dfe4ea;
+    }
+    &:last-child {
+      border: none;
+    }
+  }
+}
